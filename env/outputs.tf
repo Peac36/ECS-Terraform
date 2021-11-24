@@ -57,12 +57,6 @@ output AvailabilityZoneCount {
 output APP_ENVIRONMENT {
     value = local.environment.appEnv
 }
-output DB_VPC_ID {
-    value = local.environment.dbVPCId
-}
-output DB_SECURITY_GROUP_ID {
-    value = local.environment.dbSecurityGroupId
-}
 output APP_SECRETS {
     value = {
         SECRET: data.aws_ssm_parameter.SECRET.arn
