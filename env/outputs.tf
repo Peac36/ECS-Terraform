@@ -21,6 +21,14 @@ variable environments {
                 MAX_INSTANCE_COUNT: 4
                 DESIRED_INSTANCE_COUNT: 1
             }
+            workerSettings: {
+                INSTANCE_PORT: 80
+                INSTANCE_CPU: 2048
+                INSTANCE_MEMORY: 4096
+                MIN_INSTANCE_COUNT: 1
+                MAX_INSTANCE_COUNT: 4
+                DESIRED_INSTANCE_COUNT: 2
+            }
         }
 
         prod = {
@@ -37,6 +45,14 @@ variable environments {
                 MIN_INSTANCE_COUNT: 1
                 MAX_INSTANCE_COUNT: 4
                 DESIRED_INSTANCE_COUNT: 1
+            }
+            workerSettings: {
+                INSTANCE_PORT: 80
+                INSTANCE_CPU: 2048
+                INSTANCE_MEMORY: 4096
+                MIN_INSTANCE_COUNT: 1
+                MAX_INSTANCE_COUNT: 4
+                DESIRED_INSTANCE_COUNT: 2
             }
         }
     }
@@ -65,4 +81,7 @@ output APP_SECRETS {
 }
 output APP_SETTINGS {
     value  = local.environment.appSiteSettings
+}
+output WORKER_SETTINGS {
+    value = local.environment.workerSettings
 }
