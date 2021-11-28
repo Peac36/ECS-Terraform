@@ -11,7 +11,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
   shared_credentials_file = "$HOME/.aws/credentials"
-  profile                 = "nstoqnov"
+  profile                 = "awsuser"
   default_tags {
       tags = {
         Environment = module.env.envName

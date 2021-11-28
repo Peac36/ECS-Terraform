@@ -2,7 +2,7 @@
 
 ## Set up
 
-* Set [AWS Credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#itemizedlist) using `nstoqnov` for profile.
+* Set [AWS Credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#itemizedlist) using `awsuser` for profile.
 * Execute `terraform apply ${image}` (Make sure you pick correct workspace).
 
 ## What it contains
