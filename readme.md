@@ -1,20 +1,24 @@
 # Terraform flow
 
-## Set up
-
-* Set [AWS Credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#itemizedlist) using `awsuser` for profile.
-* Execute `terraform apply ${image}` (Make sure you pick correct workspace).
-
-## What it contains
+A simple ECS Terraform setup that includes:
 
 * 1 VPC
 * 4 Subnets(2 public and 2 private)
 * 2 Elastic IP
 * 2 NAT
-* 1 ALB - http & https listeners and one target group
+* 1 ALB
 * 1 ECS Cluster
 * 2 ECS Service
 * 2 SQS
+* 1 Worker module that determines task's count on the number of messages in the queue.
+
+
+## How to setup:
+
+* Set [AWS Credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html#itemizedlist) using `awsuser` for profile.
+* Execute `terraform apply ${image}` (Make sure you pick correct workspace).
+
+
 
 ## Modules
 
