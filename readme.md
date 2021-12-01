@@ -2,6 +2,8 @@
 
 A simple ECS Terraform setup that includes:
 
+* 1 Task CPU based auto-scale
+* 1 SQS Message count  based auto-scale.
 * 1 VPC
 * 4 Subnets(2 public and 2 private)
 * 2 Elastic IP
@@ -10,7 +12,6 @@ A simple ECS Terraform setup that includes:
 * 1 ECS Cluster
 * 2 ECS Service
 * 2 SQS
-* 1 Worker module that determines task's count on the number of messages in the queue.
 
 
 ## How to setup:
