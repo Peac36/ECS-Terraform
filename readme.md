@@ -1,4 +1,6 @@
-# Terraform flow
+# ECS Terraform flow
+
+![preview](/preview.png)
 
 A simple ECS Terraform setup that includes:
 
